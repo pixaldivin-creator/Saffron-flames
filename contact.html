@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservations | Saffron Flames</title>
+
+    <meta
+        name="description"
+        content="Reserve your table at Saffron Flames and experience authentic Indian cuisine."
+    >
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- =====================================================
+     TOP BAR
+===================================================== -->
+
+<div class="top-bar">
+    A ROYAL INDIAN DINING EXPERIENCE • RESERVATIONS RECOMMENDED
+</div>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="main-header">
+
+    <nav class="navbar">
+  
+             <!---LOGO--->
+
+           <a href="index.html" class="nav-logo">
+    <img src="Saffron Flames Luxury Restaurant Logo.png" alt="Saffron Flames">
+      </a>
+
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="about.html">
+                ABOUT US
+            </a>
+
+            <a href="menu.html">
+                MENU
+            </a>
+
+            <a href="reservation.html" class="active">
+                RESERVATION
+            </a>
+
+            <a href="order.html">
+                ORDER ONLINE
+            </a>
+
+            <a href="gallery.html">
+                GALLERY
+            </a>
+
+            <a href="contact.html">
+                CONTACT
+            </a>
+
+            <a href="reservation.html" class="nav-book-btn">
+                BOOK A TABLE
+            </a>
+
+        </div>
+
+
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation menu"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+    </nav>
+
+
+
+<!-- =====================================================
+     RESERVATION HERO
+===================================================== -->
+
+<section class="hero reservation-hero">
+
+    <div class="hero-background"></div>
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <div class="hero-decoration">
+
+            <span></span>
+            <i>✦</i>
+            <span></span>
+
+        </div>
+
+
+        <p class="hero-small-title">
+            EXPERIENCE SAFFRON FLAMES
+        </p>
+
+
+        <h1>
+
+            <span>RESERVE</span>
+
+            <strong>
+                YOUR TABLE
+            </strong>
+
+        </h1>
+
+
+        <div class="hero-line"></div>
+
+
+        <p class="hero-description">
+
+            An unforgettable dining experience
+            awaits you.
+
+        </p>
+
+    </div>
+
+
+    <div class="scroll-down">
+
+        <span>RESERVE</span>
+
+        <div></div>
+
+    </div>
+
+</section>
+
+</header>
+
+
+
+<!-- =====================================================
+     RESERVATION SECTION
+===================================================== -->
+
+<section class="reservation-page">
+
+    <div class="reservation-container">
+
+
+        <!-- LEFT CONTENT -->
+
+        <div class="reservation-info">
+
+            <p class="section-label">
+                TABLE RESERVATION
+            </p>
+
+
+            <h2>
+
+                Join us for
+
+                <em>
+                    dinner.
+                </em>
+
+            </h2>
+
+
+            <div class="gold-divider">
+
+                <span></span>
+                ◆
+                <span></span>
+
+            </div>
+
+
+            <p>
+
+                Whether it's an intimate dinner, a family
+                celebration or a special occasion, we'd love
+                to welcome you to Saffron Flames.
+
+            </p>
+
+
+            <p>
+
+                Please complete the reservation form and
+                our team will confirm your table.
+
+            </p>
+
+
+            <div class="reservation-details">
+
+
+                <div class="detail-item">
+
+                    <span class="detail-icon">
+                        ◷
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            OPENING HOURS
+                        </h3>
+
+                        <p>
+                            Monday – Thursday<br>
+                            12:00 PM – 10:30 PM
+                        </p>
+
+                        <p>
+                            Friday – Sunday<br>
+                            12:00 PM – 11:30 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="detail-item">
+
+                    <span class="detail-icon">
+                        ♧
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            CONTACT
+                        </h3>
+
+                        <p>
+                            +91 98765 43210
+                        </p>
+
+                        <p>
+                            hello@saffronflames.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RESERVATION FORM -->
+
+        <div class="reservation-form-wrapper">
+
+            <form
+                class="reservation-form"
+                id="reservationForm"
+            >
+
+                <div class="form-heading">
+
+                    <p class="section-label">
+                        BOOK A TABLE
+                    </p>
+
+                    <h3>
+                        Make a Reservation
+                    </h3>
+
+                </div>
+
+
+                <!-- NAME -->
+
+                <div class="form-group">
+
+                    <label for="guestName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="guestName"
+                        name="guestName"
+                        placeholder="Your name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- PHONE -->
+
+                <div class="form-group">
+
+                    <label for="guestPhone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="guestPhone"
+                        name="guestPhone"
+                        placeholder="+91"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- EMAIL -->
+
+                <div class="form-group">
+
+                    <label for="guestEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="guestEmail"
+                        name="guestEmail"
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+
+
+                <!-- DATE + TIME -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="reservationDate">
+                            Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="reservationDate"
+                            name="reservationDate"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="reservationTime">
+                            Time
+                        </label>
+
+                        <select
+                            id="reservationTime"
+                            name="reservationTime"
+                            required
+                        >
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option>
+                                12:00 PM
+                            </option>
+
+                            <option>
+                                12:30 PM
+                            </option>
+
+                            <option>
+                                1:00 PM
+                            </option>
+
+                            <option>
+                                1:30 PM
+                            </option>
+
+                            <option>
+                                2:00 PM
+                            </option>
+
+                            <option>
+                                6:00 PM
+                            </option>
+
+                            <option>
+                                6:30 PM
+                            </option>
+
+                            <option>
+                                7:00 PM
+                            </option>
+
+                            <option>
+                                7:30 PM
+                            </option>
+
+                            <option>
+                                8:00 PM
+                            </option>
+
+                            <option>
+                                8:30 PM
+                            </option>
+
+                            <option>
+                                9:00 PM
+                            </option>
+
+                            <option>
+                                9:30 PM
+                            </option>
+
+                            <option>
+                                10:00 PM
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- GUESTS -->
+
+                <div class="form-group">
+
+                    <label for="guestCount">
+                        Number of Guests
+                    </label>
+
+                    <select
+                        id="guestCount"
+                        name="guestCount"
+                        required
+                    >
+
+                        <option value="">
+                            Select guests
+                        </option>
+
+                        <option>
+                            1 Guest
+                        </option>
+
+                        <option>
+                            2 Guests
+                        </option>
+
+                        <option>
+                            3 Guests
+                        </option>
+
+                        <option>
+                            4 Guests
+                        </option>
+
+                        <option>
+                            5 Guests
+                        </option>
+
+                        <option>
+                            6 Guests
+                        </option>
+
+                        <option>
+                            7 Guests
+                        </option>
+
+                        <option>
+                            8 Guests
+                        </option>
+
+                        <option>
+                            9+ Guests
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SPECIAL REQUEST -->
+
+                <div class="form-group">
+
+                    <label for="specialRequest">
+                        Special Request
+                    </label>
+
+                    <textarea
+                        id="specialRequest"
+                        name="specialRequest"
+                        rows="4"
+                        placeholder="Birthday, anniversary, seating preference..."
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- SUBMIT -->
+
+                <button
+                    type="submit"
+                    class="gold-button reservation-submit"
+                >
+                    REQUEST RESERVATION
+                </button>
+
+
+                <p class="form-note">
+
+                    Our team will contact you to confirm
+                    your reservation.
+
+                </p>
+
+
+                <!-- SUCCESS MESSAGE -->
+
+                <div
+                    id="reservationMessage"
+                    class="reservation-message"
+                ></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SPECIAL OCCASIONS
+===================================================== -->
+
+<section class="quote-section">
+
+    <div class="quote-background"></div>
+
+    <div class="quote-overlay"></div>
+
+
+    <div class="quote-content">
+
+        <div class="quote-mark">
+            “
+        </div>
+
+
+        <h2>
+
+            Make your moments
+
+            <em>
+                memorable.
+            </em>
+
+        </h2>
+
+
+        <p>
+            BIRTHDAYS • ANNIVERSARIES • FAMILY DINNERS • CELEBRATIONS
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <!-- BRAND -->
+
+        <div class="footer-column footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <div class="logo-icon">
+                    ♨
+                </div>
+
+                <div class="logo-text">
+
+                    <span class="logo-main">
+                        SAFFRON
+                    </span>
+
+                    <span class="logo-sub">
+                        FLAMES
+                    </span>
+
+                    <small>
+                        IGNITE YOUR SENSES
+                    </small>
+
+                </div>
+
+            </a>
+
+
+            <p>
+                A modern celebration of India's rich
+                culinary heritage.
+            </p>
+
+
+            <div class="social-icons">
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    f
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    ▶
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- EXPLORE -->
+
+        <div class="footer-column">
+
+            <h3>
+                EXPLORE
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About Us
+            </a>
+
+            <a href="menu.html">
+                Menu
+            </a>
+
+            <a href="gallery.html">
+                Gallery
+            </a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>
+                VISIT US
+            </h3>
+
+            <p>
+                123 Saffron Street<br>
+                Your City, India
+            </p>
+
+            <p>
+                +91 98765 43210
+            </p>
+
+            <p>
+                hello@saffronflames.com
+            </p>
+
+        </div>
+
+
+
+        <!-- HOURS -->
+
+        <div class="footer-column">
+
+            <h3>
+                OPENING HOURS
+            </h3>
+
+            <p>
+                Monday – Thursday<br>
+                12:00 PM – 10:30 PM
+            </p>
+
+            <p>
+                Friday – Sunday<br>
+                12:00 PM – 11:30 PM
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Saffron Flames. All Rights Reserved.
+        </span>
+
+        <span>
+            Crafted with passion &amp; spice.
+        </span>
+
+    </div>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
